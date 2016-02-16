@@ -228,25 +228,21 @@ body {
 }
 
 /* Helper classes */
-
 .col {
   float: left;
+}
+
+.col-50 {
   width: 50%;
-}
-.col.preview {
-  width: 35%;;
-}
-.col.code {
-  width: 65%;
-  text-align: left;
-}
-.col.code > * {
-  margin-left: 40px;
 }
 
 .col-33 {
-  float: left;
   width: 33%;
+  padding: 5px;
+}
+
+.col-25 {
+  width: 25%;
   padding: 5px;
 }
 
