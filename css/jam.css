@@ -264,3 +264,7 @@ body {
 .reveal .quicksand {
   font-family: "Quicksand Regular", sans-serif;
 }
+
+.reveal small {
+  color: white;
+}
