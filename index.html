@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Jam</title>
+    <title>How to make a pivot, the technical aspect</title>
 
-    <meta name="description" content="Jam" />
-    <meta name="author" content="Jam" />
+    <meta name="description" content="Best practices and workflows for delivering a scalable product: deal with short product iterations, prototypes, deliveries, testing, technical debt, roadmaps prioritization" />
+    <meta name="author" content="Loïc Delmaire" />
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -35,49 +35,313 @@
     <div class="reveal">
       <div class="slides">
         <section>
-          <img src="img/logo.png" alt="Logo" class="logo" height="300" />
-          <h1 class="quicksand">jam</h1>
+          <h2>
+            How to make a pivot<br />
+            the technical aspect
+          </h2>
+          <small>
+            <a href="https://twitter.com/loicdelmaire">Loïc Delmaire</a>, COO (ex-CTO) <a href="https:hellojam.fr">@hellojam</a>
+            <br />
+            <br />
+            Slides available here: <a href="http://skelz0r.ninja/technical-pivot">http://skelz0r.ninja/technical-pivot</a>
+          </small>
+
+          <aside class="notes">
+            <ul>
+              <li>Own story, as a technical co-founder and technical mentor</li>
+              <li>More B2C and web oriented</li>
+              <li>A talk for technical founders in early stage startups</li>
+              <li>General concepts / advises for startups, with a technical point of view</li>
+              <li>Tech startups have to have a competitive advantage on tech</li>
+              <li>HOWTO make a scalable product with short iterations</li>
+            </ul>
+          </aside>
         </section>
 
         <section>
-          <h3>Example ordered list</h3>
-          <ol>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-          </ol>
+          <h2>Jam: the problem we want to solve</h2>
         </section>
 
         <section>
-          <h3>Example unordored list</h3>
+          <h3>Jam before</h3>
           <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
+            <li>Blackbird: one campus, one feature</li>
+            <li>Rebranding and huge iteration: justjam</li>
+            <li>Scale on ~50 campuses</li>
+          </ul>
+          <aside class="notes">
+            <ul>
+              <li>NUMA</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Jam, the pivot</h3>
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section>
+          <h3>Jam now</h3>
+          <p>
+            PITCH
+          </p>
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section>
+          <h3>Make it lean</h3>
+          <ul>
+            <li>Build / Measure / Learn</li>
+            <li>Fail fast</li>
+          </ul>
+          <aside class="notes">
+            <ul>
+              <li>Not a goal, only a methodo</li>
+              <li>Use it to explore new features</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Manual first</h3>
+          <ul>
+            <li>Use existing tools / platforms</li>
+            <li>Use prototyping tools (InDesign, POP, ionic creator, etc..)</li>
+            <li>Plug APIs (zapier/iftt, trello..)</li>
+            <li>Fake it</li>
+          </ul>
+
+          <aside class="notes">
+            <ul>
+              <li>Blackbird could be a NL or FB group</li>
+              <li>Do things that don't scale</li>
+              <li>Idea validation</li>
+              <li>Manual first doesn't remove UX problems</li>
+              <li>Fake it: marketplace, fake one side</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Prototyping: rules</h3>
+
+          <ul>
+            <li>One problem, one feature, one platform</li>
+            <li>Users interviews</li>
+            <li>KISS</li>
+          </ul>
+
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section>
+          <h3>Prototyping: technical part</h3>
+
+          <ul>
+            <li>Use SaaS and BaaS</li>
+          </ul>
+
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section>
+          <h3>From prototype to product</h3>
+
+          <ul>
+            <li>Move fast, solve obvious problems / frictions</li>
+            <li>Keep short terms goals simple</li>
+            <li>Set medium term goal</li>
+            <li>Focus on creating value</li>
+          </ul>
+
+          <aside class="notes">
+            <ul>
+              <li>Idea validated</li>
+              <li>prioritze: 80 / 20</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Technical management: the basics</h3>
+
+          <ol>
+            <li>Use source control</li>
+            <li>Have a bug database</li>
+            <li>Write specs</li>
+          </ol>
+
+          <aside class="notes">
+            <ul>
+              <li>Spolsky test</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Workflows</h3>
+
+          <ul>
+            <li>Keep an up-to-date schedule</li>
+            <li>Set milestones</li>
+            <li>Perform code reviews</li>
+            <li>Use existing git workflows</li>
+          </ul>
+
+          <aside class="notes">
+            <ul>
+              <li>read my own PRs</li>
+              <li>quora ingeniors read code after going on production</li>
+              <li>git workflow: github / git flow</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Unit / End to End testing (1/2)</h3>
+
+          DO IT
+
+          <aside class="notes">
+            <ul>
+              <li>Iterations time will be consistant</li>
+              <li>Reorganize the basecode will take less time</li>
+              <li>It can be a contract with your non-technical team</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Unit / end to end testing (2/2)</h3>
+
+          <ol>
+            <li>Use Test Driven Development</li>
+            <li>Make high level test: the happy path</li>
+            <li>Make non-regression tests for bugs</li>
+            <li>Don't test every piece of code</li>
+          </ol>
+
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section>
+          <h3>Automate common tasks</h3>
+
+          <ol>
+            <li>Continuous Integration</li>
+            <li>Build in one step</li>
+            <li>Continuous Delivery</li>
+          </ol>
+
+          <aside class="notes">
+            <ul>
+              <li>Build in one step (XCode oh noeees)</li>
+              <li>CD: short iterations makes easier to plan it</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Code quality</h3>
+
+          <ul>
+            <li>Do conception thanks to specs</li>
+            <li>Be consistant</li>
+            <li>Use crystal clear variable name</li>
+          </ul>
+
+          <aside class="notes">
+            <ul>
+              <li>Anything is obvious: TDD and conception help to tackle issues faster</li>
+              <li>General advices, more on Clean Code.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Deal with technical debt</h3>
+
+          <aside class="notes">
+            <ul>
+              <li>One hand: deliver value, other: keep code base clean</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Use best tools money can buy</h3>
+
+          <!-- <ul> -->
+          <!-- </ul> -->
+
+          <aside class="notes">
+            <ul>
+              <li>Spolsky test again</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h1>QA time</h1>
+          <p>
+            Slides available here: <a href="http://skelz0r.ninja/technical-pivot">http://skelz0r.ninja/technical-pivot</a>
+          </p>
+        </section>
+
+        <section>
+          <h3>References</h3>
+          <ul>
+            <li><a href="">Do things that don't scale - Paul Graham</a></li>
+            <li><a href="">The Joel Test: 12 steps to better code - Joel Spolsky</a></li>
+            <li><a href="">Clean code</a></li>
           </ul>
         </section>
 
-        <section>
-          <h3>Example col with images</h3>
-          <div class="col col-33">
-            <div class="bg-img" style="background-image: url('img/logo.png');"></div>
-            <p>
-            Legend 1
-            </p>
-          </div>
-          <div class="col col-33">
-            <p>
-            More and more and more and more and more and more and more and more and more and more and more
-            and more and more and moretext
-            </p>
-          </div>
-          <div class="col col-33">
-            <div class="bg-img" style="background-image: url('img/logo.png');"></div>
-            <p>
-            Legend 2
-            </p>
-          </div>
-        </section>
+        <!-- <section> -->
+        <!--   <h3>Example ordered list</h3> -->
+        <!--   <ol> -->
+        <!--     <li>Item 1</li> -->
+        <!--     <li>Item 2</li> -->
+        <!--     <li>Item 3</li> -->
+        <!--   </ol> -->
+        <!-- </section> -->
+
+        <!-- <section> -->
+        <!--   <h3>Example unordored list</h3> -->
+        <!--   <ul> -->
+        <!--     <li>Item 1</li> -->
+        <!--     <li>Item 2</li> -->
+        <!--     <li>Item 3</li> -->
+        <!--   </ul> -->
+        <!-- </section> -->
+        <!--  -->
+        <!-- <section> -->
+        <!--   <h3>Example col with images</h3> -->
+        <!--   <div class="col col&#45;33"> -->
+        <!--     <div class="bg&#45;img" style="background&#45;image: url('img/logo.png');"></div> -->
+        <!--     <p> -->
+        <!--     Legend 1 -->
+        <!--     </p> -->
+        <!--   </div> -->
+        <!--   <div class="col col&#45;33"> -->
+        <!--     <p> -->
+        <!--     More and more and more and more and more and more and more and more and more and more and more -->
+        <!--     and more and more and moretext -->
+        <!--     </p> -->
+        <!--   </div> -->
+        <!--   <div class="col col&#45;33"> -->
+        <!--     <div class="bg&#45;img" style="background&#45;image: url('img/logo.png');"></div> -->
+        <!--     <p> -->
+        <!--     Legend 2 -->
+        <!--     </p> -->
+        <!--   </div> -->
+        <!-- </section> -->
       </div>
     </div>
 
