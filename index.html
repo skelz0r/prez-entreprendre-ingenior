@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
 
-    <title>How to make a pivot, the technical aspect</title>
+    <title>Entreprendre lorsque l'on est élève ingénieur en informatique</title>
 
-    <meta name="description" content="Best practices and workflows for delivering a scalable product: deal with short product iterations, prototypes, deliveries, testing, technical debt, roadmaps prioritization" />
+    <meta name="description" content="Entreprendre lorsque l'on est élève ingénieur en informatique" />
     <meta name="author" content="Loïc Delmaire" />
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,274 +33,141 @@
   </head>
   <body>
     <div class="reveal">
-      <div class="slides">
-        <section>
-          <h2>
-            How to make a pivot<br />
-            the technical aspect
-          </h2>
-          <small>
-            <a href="https://twitter.com/loicdelmaire">Loïc Delmaire</a>, COO (ex-CTO) <a href="https:hellojam.fr">@hellojam</a>
-            <br />
-            <br />
-            Slides available here: <a href="http://skelz0r.ninja/technical-pivot">http://skelz0r.ninja/technical-pivot</a>
-          </small>
+			<div class="slides">
+			  <section>
+          <h2>Entreprendre lorsque l'on est élève ingénieur en informatique</h2>
+					<p>
+            <small>
+              Loïc Delmaire, COO / CTO & co-founder @ Jam (ex Blackbird) <br />
+              <a href="mailto:loic@hellojam.fr">loic@hellojam.fr</a>
+            </small>
+					</p>
+				</section>
 
-          <aside class="notes">
-            <ul>
-              <li>Own story, as a technical co-founder and technical mentor</li>
-              <li>More B2C and web oriented</li>
-              <li>A talk for technical founders in early stage startups</li>
-              <li>General concepts / advises for startups, with a technical point of view</li>
-              <li>Tech startups have to have a competitive advantage on tech</li>
-              <li>HOWTO make a scalable product with short iterations</li>
-            </ul>
-          </aside>
+        <section>
+          <h3>Jam</h3>
+          <h5>Profite de ton temps libre</h5>
+          <img src="img/logo.png" style="border: none; width: 400px;box-shadow: none;" />
         </section>
 
         <section>
-          <h2>Jam: the problem we want to solve</h2>
-        </section>
-
-        <section>
-          <h3>Jam before</h3>
+          <h3>Un peu de contexte</h3>
           <ul>
-            <li>Blackbird: one campus, one feature</li>
-            <li>Rebranding and huge iteration: justjam</li>
-            <li>Scale on ~50 campuses</li>
+            <li>Mars 2015: Pivot d'un réseau social de campus à un assistant personnel par SMS</li>
+            <li>Janvier 2016: Levée de 1M, équipe : 5 -> ~20</li>
+            <li>Octobre 2016: Pivot sur un chatbot messenger full automatisé</li>
           </ul>
-          <aside class="notes">
-            <ul>
-              <li>NUMA</li>
-            </ul>
-          </aside>
         </section>
 
         <section>
-          <h3>Jam, the pivot</h3>
-          <aside class="notes">
-          </aside>
+          <h3>C'est quoi une startup ?</h3>
+          <p>Une startup est une organisation sociale temporaire à la quête d'un business model scalable et répétable</p>
         </section>
 
         <section>
-          <h3>Jam now</h3>
+          <h3>Se lancer dans l'aventure ..?</h3>
+          <ul>
+            <li>Un <strong>problème</strong> à résoudre</li>
+            <li>Une <strong>vision</strong>, pour le rêve</li>
+            <li>Une <strong>équipe</strong>, pour la ROBUSTESSE</li>
+            <li>Une (ou des) <strong>idée</strong>(s), pour en parler</li>
+          </ul>
+        </section>
+
+        <section>
+        <h3><a href="http://venturehacks.com/articles/minimum-viable-product">Minimum Viable Product</a> (MVP)</h3>
+          <h5>Valider la pertinence d'une idée / concept</h5>
+          <ul>
+            <li>BIEN définir LE problème que l'on veut résoudre</li>
+            <li>Parler aux (futurs) utilisateurs .. souvent</li>
+          </ul>
+        </section>
+
+        <section>
+        <h1>Minimum</h1>
+        <h3>Viable Product</h3>
+        <p>Keep It Simple & Stupid</p>
+        </section>
+
+        <section>
+          <h3>Concrètement, un MVP ?</h3>
+          <ol>
+            <li><a href="http://en.wikipedia.org/wiki/Persona_(user_experience)">Personas</a></li>
+            <li><a href="http://martinfowler.com/bliki/UseCasesAndStories.html">User stories / Use cases</a></li>
+            <li><a href="https://balsamiq.com/">Mockups</a></li>
+            <li><strong>Un peu</strong> de code (et encore ..)</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>Vraiment</h3>
+          <h1>peu</h1>
+          <h3>de code</h3>
+          <p>STOP réinventer la roue svp, merci.</p>
+        </section>
+
+        <section>
+          <h3>Après le MVP, on itére</h3>
+          <ol>
+            <li>Build</li>
+            <li>Measure</li>
+            <li>Learn</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>On itére <strong>rapidement</strong></h3>
+          <ul>
+            <li>Ship often</li>
+            <li>Manual first</li>
+            <li>Focus</li>
+            <li>Talk to your users</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Et comment qu'on sait que ça marche ..?</h3>
+          <h5>L'importance des interviews</h5>
+          <p>Parlez à vos utilisateurs</p>
+        </section>
+
+        <section>
+          <h3>Et comment qu'on sait que ça marche ..?</h3>
+          <h5>L'importance de la mesure</h5>
+          <ol>
+            <li><strong>A</strong>cquisition</li>
+            <li><strong>A</strong>ctivation</li>
+            <li><strong>R</strong>etention</li>
+            <li><strong>R</strong>eferral</li>
+            <li><strong>R</strong>evenue</li>
+          </ol>
           <p>
-            PITCH
-          </p>
-          <aside class="notes">
-          </aside>
-        </section>
-
-        <section>
-          <h3>Make it lean</h3>
-          <ul>
-            <li>Build / Measure / Learn</li>
-            <li>Fail fast</li>
-          </ul>
-          <aside class="notes">
-            <ul>
-              <li>Not a goal, only a methodo</li>
-              <li>Use it to explore new features</li>
-            </ul>
-          </aside>
-        </section>
-
-        <section>
-          <h3>Manual first</h3>
-          <ul>
-            <li>Use existing tools / platforms</li>
-            <li>Use prototyping tools (InDesign, POP, ionic creator, etc..)</li>
-            <li>Plug APIs (zapier/iftt, trello..)</li>
-            <li>Fake it</li>
-          </ul>
-
-          <aside class="notes">
-            <ul>
-              <li>Blackbird could be a NL or FB group</li>
-              <li>Do things that don't scale</li>
-              <li>Idea validation</li>
-              <li>Manual first doesn't remove UX problems</li>
-              <li>Fake it: marketplace, fake one side</li>
-            </ul>
-          </aside>
-        </section>
-
-        <section>
-          <h3>Prototyping: rules</h3>
-
-          <ul>
-            <li>One problem, one feature, one platform</li>
-            <li>Users interviews</li>
-            <li>KISS</li>
-          </ul>
-
-          <aside class="notes">
-          </aside>
-        </section>
-
-        <section>
-          <h3>Prototyping: technical part</h3>
-
-          <ul>
-            <li>Use SaaS and BaaS</li>
-          </ul>
-
-          <aside class="notes">
-          </aside>
-        </section>
-
-        <section>
-          <h3>From prototype to product</h3>
-
-          <ul>
-            <li>Move fast, solve obvious problems / frictions</li>
-            <li>Keep short terms goals simple</li>
-            <li>Set medium term goal</li>
-            <li>Focus on creating value</li>
-          </ul>
-
-          <aside class="notes">
-            <ul>
-              <li>Idea validated</li>
-              <li>prioritze: 80 / 20</li>
-            </ul>
-          </aside>
-        </section>
-
-        <section>
-          <h3>Technical management: the basics</h3>
-
-          <ol>
-            <li>Use source control</li>
-            <li>Have a bug database</li>
-            <li>Write specs</li>
-          </ol>
-
-          <aside class="notes">
-            <ul>
-              <li>Spolsky test</li>
-            </ul>
-          </aside>
-        </section>
-
-        <section>
-          <h3>Workflows</h3>
-
-          <ul>
-            <li>Keep an up-to-date schedule</li>
-            <li>Set milestones</li>
-            <li>Perform code reviews</li>
-            <li>Use existing git workflows</li>
-          </ul>
-
-          <aside class="notes">
-            <ul>
-              <li>read my own PRs</li>
-              <li>quora ingeniors read code after going on production</li>
-              <li>git workflow: github / git flow</li>
-            </ul>
-          </aside>
-        </section>
-
-        <section>
-          <h3>Unit / End to End testing (1/2)</h3>
-
-          DO IT
-
-          <aside class="notes">
-            <ul>
-              <li>Iterations time will be consistant</li>
-              <li>Reorganize the basecode will take less time</li>
-              <li>It can be a contract with your non-technical team</li>
-            </ul>
-          </aside>
-        </section>
-
-        <section>
-          <h3>Unit / end to end testing (2/2)</h3>
-
-          <ol>
-            <li>Use Test Driven Development</li>
-            <li>Make high level test: the happy path</li>
-            <li>Make non-regression tests for bugs</li>
-            <li>Don't test every piece of code</li>
-          </ol>
-
-          <aside class="notes">
-          </aside>
-        </section>
-
-        <section>
-          <h3>Automate common tasks</h3>
-
-          <ol>
-            <li>Continuous Integration</li>
-            <li>Build in one step</li>
-            <li>Continuous Delivery</li>
-          </ol>
-
-          <aside class="notes">
-            <ul>
-              <li>Build in one step (XCode oh noeees)</li>
-              <li>CD: short iterations makes easier to plan it</li>
-            </ul>
-          </aside>
-        </section>
-
-        <section>
-          <h3>Code quality</h3>
-
-          <ul>
-            <li>Do conception thanks to specs</li>
-            <li>Be consistant</li>
-            <li>Use crystal clear variable name</li>
-          </ul>
-
-          <aside class="notes">
-            <ul>
-              <li>Anything is obvious: TDD and conception help to tackle issues faster</li>
-              <li>General advices, more on Clean Code.</li>
-            </ul>
-          </aside>
-        </section>
-
-        <section>
-          <h3>Deal with technical debt</h3>
-
-          <aside class="notes">
-            <ul>
-              <li>One hand: deliver value, other: keep code base clean</li>
-            </ul>
-          </aside>
-        </section>
-
-        <section>
-          <h3>Use best tools money can buy</h3>
-
-          <!-- <ul> -->
-          <!-- </ul> -->
-
-          <aside class="notes">
-            <ul>
-              <li>Spolsky test again</li>
-            </ul>
-          </aside>
-        </section>
-
-        <section>
-          <h1>QA time</h1>
-          <p>
-            Slides available here: <a href="http://skelz0r.ninja/technical-pivot">http://skelz0r.ninja/technical-pivot</a>
+          <br />
+          <small>Les pirates metrics</small>
           </p>
         </section>
 
         <section>
-          <h3>References</h3>
+          <h3>Comment on fait de l'acquisition ?</h3>
+
           <ul>
-            <li><a href="">Do things that don't scale - Paul Graham</a></li>
-            <li><a href="">The Joel Test: 12 steps to better code - Joel Spolsky</a></li>
-            <li><a href="">Clean code</a></li>
+            <li>Allez là où vos users sont</li>
+            <li>Facebook Ads</li>
           </ul>
+        </section>
+
+        <section>
+          <h3>Me contacter ..</h3>
+          <h5>pour vos questions, idées, conseils ..</h5>
+          <ul>
+            <li>Email: loic@hellojam.fr</li>
+            <li>Twitter: @loicdelmaire</li>
+            <li>IRC: Skelz0r</li>
+          </ul>
+          <p>
+          <br />
+          <small>PS: Je ne mords pas</small>
+          </p>
         </section>
 
         <!-- <section> -->
